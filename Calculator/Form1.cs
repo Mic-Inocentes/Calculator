@@ -180,5 +180,12 @@ namespace Calculator
         {
             CalcDisplay.Text = CalcDisplay.Text.Substring(0, CalcDisplay.Text.Length - 1);
         }
+
+        private void SymbolButton_PlusMinus_Click(object sender, EventArgs e)
+        {
+            double number = Convert.ToDouble(CalcDisplay.Text);
+            number = number * -1;
+            CalcDisplay.Text = number + "";
+        }
     }
 }
