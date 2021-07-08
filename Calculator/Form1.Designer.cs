@@ -301,6 +301,7 @@ namespace Calculator
             this.Button_Delete.TabIndex = 17;
             this.Button_Delete.Text = "DEL";
             this.Button_Delete.UseVisualStyleBackColor = false;
+            this.Button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
             // 
             // CalcDisplay
             // 

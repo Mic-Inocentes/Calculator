@@ -175,5 +175,10 @@ namespace Calculator
                 }
             }
         }
+
+        private void Button_Delete_Click(object sender, EventArgs e)
+        {
+            CalcDisplay.Text = CalcDisplay.Text.Substring(0, CalcDisplay.Text.Length - 1);
+        }
     }
 }
