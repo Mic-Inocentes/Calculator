@@ -17,10 +17,12 @@ namespace Calculator
         char function;
         double result = 0.0;
         string userInput = "";
+        System.Media.SoundPlayer PressSound;
 
         public Form1()
         {
             InitializeComponent();
+            PressSound = new System.Media.SoundPlayer(Properties.Resources.sound);
         }
 
         private void SymbolKeypad0_Click(object sender, EventArgs e)
@@ -28,6 +30,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "0";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad1_Click(object sender, EventArgs e)
@@ -35,6 +38,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "1";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad2_Click(object sender, EventArgs e)
@@ -42,6 +46,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "2";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad3_Click(object sender, EventArgs e)
@@ -49,6 +54,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "3";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad4_Click(object sender, EventArgs e)
@@ -56,6 +62,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "4";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad5_Click(object sender, EventArgs e)
@@ -63,6 +70,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "5";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad6_Click(object sender, EventArgs e)
@@ -70,6 +78,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "6";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad7_Click(object sender, EventArgs e)
@@ -77,6 +86,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "7";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad8_Click(object sender, EventArgs e)
@@ -84,6 +94,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "8";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolKeypad9_Click(object sender, EventArgs e)
@@ -91,6 +102,7 @@ namespace Calculator
             CalcDisplay.Text = "";
             userInput += "9";
             CalcDisplay.Text += userInput;
+            PressSound.Play();
         }
 
         private void SymbolButton_Decimal_Click(object sender, EventArgs e)
