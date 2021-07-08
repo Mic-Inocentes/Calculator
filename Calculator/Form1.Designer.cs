@@ -359,6 +359,7 @@ namespace Calculator
             this.SymbolButton_Percent.TabIndex = 21;
             this.SymbolButton_Percent.Text = "%";
             this.SymbolButton_Percent.UseVisualStyleBackColor = false;
+            this.SymbolButton_Percent.Click += new System.EventHandler(this.SymbolButton_Percent_Click);
             // 
             // SymbolButton_Reciprocal
             // 

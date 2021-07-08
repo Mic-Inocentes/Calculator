@@ -144,25 +144,25 @@ namespace Calculator
             firstNum = Convert.ToDouble(first);
             secondNum = Convert.ToDouble(second);
 
-            if(function == '+')
+            if (function == '+')
             {
                 result = firstNum + secondNum;
                 CalcDisplay.Text = result.ToString();
             }
 
-            else if(function == '-')
+            else if (function == '-')
             {
                 result = firstNum - secondNum;
                 CalcDisplay.Text = result.ToString();
             }
 
-            else if(function == '*')
+            else if (function == '*')
             {
                 result = firstNum * secondNum;
                 CalcDisplay.Text = result.ToString();
             }
 
-            else if(function == '/')
+            else if (function == '/')
             {
                 if (secondNum == 'O')
                 {
@@ -208,5 +208,45 @@ namespace Calculator
             number = 1 / number;
             CalcDisplay.Text = number + "";
         }
+
+        private void SymbolButton_Percent_Click(object sender, EventArgs e)
+        {
+            second = userInput;
+            double firstNum, secondNum;
+            firstNum = Convert.ToDouble(first);
+            secondNum = Convert.ToDouble(second);
+
+            if (function == '+')
+            {
+                result = firstNum * secondNum / 100;
+                CalcDisplay.Text = result.ToString();
+            }
+
+            else if (function == '-')
+            {
+                result = firstNum * secondNum / 100;
+                CalcDisplay.Text = result.ToString();
+            }
+
+            else if (function == '*')
+            {
+                result = firstNum * secondNum / 100;
+                CalcDisplay.Text = result.ToString();
+            }
+
+            else if (function == '/')
+            {
+                if (secondNum == 'O')
+                {
+                    CalcDisplay.Text = "Error";
+                }
+                else
+                {
+                    result = firstNum * secondNum / 100;
+                    CalcDisplay.Text = result.ToString();
+                }
+            }
+        }
     }
 }
+
