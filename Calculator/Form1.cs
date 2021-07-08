@@ -242,7 +242,7 @@ namespace Calculator
 
             else if (function == '*')
             {
-                result = firstNum * secondNum / 100;
+                result = (firstNum / firstNum) * secondNum / 100;
                 CalcDisplay.Text = result.ToString();
             }
 
@@ -254,7 +254,7 @@ namespace Calculator
                 }
                 else
                 {
-                    result = firstNum * secondNum / 100;
+                    result = (firstNum / firstNum) * secondNum / 100;
                     CalcDisplay.Text = result.ToString();
                 }
             }
