@@ -166,7 +166,7 @@ namespace Calculator
             {
                 if (secondNum == 'O')
                 {
-                    CalcDisplay.Text = "Math ERROR";
+                    CalcDisplay.Text = "Error";
                 }
                 else
                 {
@@ -190,8 +190,22 @@ namespace Calculator
 
         private void SymbolButton_SquareRoot_Click(object sender, EventArgs e)
         {
+            if (Convert.ToDouble(CalcDisplay.Text) >= 0)
+            {
+                double number = Convert.ToDouble(CalcDisplay.Text);
+                number = Math.Pow(number, .5);
+                CalcDisplay.Text = number + "";
+            }
+            else
+            {
+                CalcDisplay.Text = "Error";
+            }
+        }
+
+        private void SymbolButton_Reciprocal_Click(object sender, EventArgs e)
+        {
             double number = Convert.ToDouble(CalcDisplay.Text);
-            number = Math.Pow(number, .5);
+            number = 1 / number;
             CalcDisplay.Text = number + "";
         }
     }

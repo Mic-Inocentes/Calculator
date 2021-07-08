@@ -51,7 +51,7 @@ namespace Calculator
             this.SymbolButton_PlusMinus = new System.Windows.Forms.Button();
             this.SymbolButton_SquareRoot = new System.Windows.Forms.Button();
             this.SymbolButton_Percent = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.SymbolButton_Reciprocal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SymbolKeypad7
@@ -360,18 +360,19 @@ namespace Calculator
             this.SymbolButton_Percent.Text = "%";
             this.SymbolButton_Percent.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // SymbolButton_Reciprocal
             // 
-            this.button4.BackColor = System.Drawing.Color.LightPink;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(292, 257);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 50);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "AC";
-            this.button4.UseVisualStyleBackColor = false;
+            this.SymbolButton_Reciprocal.BackColor = System.Drawing.Color.LightPink;
+            this.SymbolButton_Reciprocal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.SymbolButton_Reciprocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SymbolButton_Reciprocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SymbolButton_Reciprocal.Location = new System.Drawing.Point(292, 257);
+            this.SymbolButton_Reciprocal.Name = "SymbolButton_Reciprocal";
+            this.SymbolButton_Reciprocal.Size = new System.Drawing.Size(50, 50);
+            this.SymbolButton_Reciprocal.TabIndex = 22;
+            this.SymbolButton_Reciprocal.Text = "1/x";
+            this.SymbolButton_Reciprocal.UseVisualStyleBackColor = false;
+            this.SymbolButton_Reciprocal.Click += new System.EventHandler(this.SymbolButton_Reciprocal_Click);
             // 
             // Form1
             // 
@@ -379,7 +380,7 @@ namespace Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(394, 326);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.SymbolButton_Reciprocal);
             this.Controls.Add(this.SymbolButton_Percent);
             this.Controls.Add(this.SymbolButton_SquareRoot);
             this.Controls.Add(this.SymbolButton_PlusMinus);
@@ -434,7 +435,7 @@ namespace Calculator
         private System.Windows.Forms.Button SymbolButton_PlusMinus;
         private System.Windows.Forms.Button SymbolButton_SquareRoot;
         private System.Windows.Forms.Button SymbolButton_Percent;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button SymbolButton_Reciprocal;
     }
 }
 
