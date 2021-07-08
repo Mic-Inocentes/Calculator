@@ -52,6 +52,7 @@ namespace Calculator
             this.SymbolButton_SquareRoot = new System.Windows.Forms.Button();
             this.SymbolButton_Percent = new System.Windows.Forms.Button();
             this.SymbolButton_Reciprocal = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SymbolKeypad7
@@ -61,7 +62,7 @@ namespace Calculator
             this.SymbolKeypad7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad7.Location = new System.Drawing.Point(12, 90);
+            this.SymbolKeypad7.Location = new System.Drawing.Point(12, 146);
             this.SymbolKeypad7.Name = "SymbolKeypad7";
             this.SymbolKeypad7.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad7.TabIndex = 0;
@@ -75,7 +76,7 @@ namespace Calculator
             this.SymbolKeypad9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad9.Location = new System.Drawing.Point(124, 90);
+            this.SymbolKeypad9.Location = new System.Drawing.Point(124, 146);
             this.SymbolKeypad9.Name = "SymbolKeypad9";
             this.SymbolKeypad9.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad9.TabIndex = 1;
@@ -89,7 +90,7 @@ namespace Calculator
             this.SymbolKeypad8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad8.Location = new System.Drawing.Point(68, 90);
+            this.SymbolKeypad8.Location = new System.Drawing.Point(68, 146);
             this.SymbolKeypad8.Name = "SymbolKeypad8";
             this.SymbolKeypad8.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad8.TabIndex = 2;
@@ -103,7 +104,7 @@ namespace Calculator
             this.SymbolKeypad4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad4.Location = new System.Drawing.Point(12, 146);
+            this.SymbolKeypad4.Location = new System.Drawing.Point(12, 202);
             this.SymbolKeypad4.Name = "SymbolKeypad4";
             this.SymbolKeypad4.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad4.TabIndex = 3;
@@ -117,7 +118,7 @@ namespace Calculator
             this.SymbolKeypad5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad5.Location = new System.Drawing.Point(68, 146);
+            this.SymbolKeypad5.Location = new System.Drawing.Point(68, 202);
             this.SymbolKeypad5.Name = "SymbolKeypad5";
             this.SymbolKeypad5.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad5.TabIndex = 4;
@@ -131,7 +132,7 @@ namespace Calculator
             this.SymbolButton_Plus.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Plus.Location = new System.Drawing.Point(180, 258);
+            this.SymbolButton_Plus.Location = new System.Drawing.Point(180, 314);
             this.SymbolButton_Plus.Name = "SymbolButton_Plus";
             this.SymbolButton_Plus.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Plus.TabIndex = 5;
@@ -145,7 +146,7 @@ namespace Calculator
             this.SymbolButton_Decimal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Decimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Decimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Decimal.Location = new System.Drawing.Point(124, 258);
+            this.SymbolButton_Decimal.Location = new System.Drawing.Point(124, 314);
             this.SymbolButton_Decimal.Name = "SymbolButton_Decimal";
             this.SymbolButton_Decimal.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Decimal.TabIndex = 6;
@@ -159,9 +160,9 @@ namespace Calculator
             this.SymbolKeypad0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad0.Location = new System.Drawing.Point(68, 258);
+            this.SymbolKeypad0.Location = new System.Drawing.Point(12, 314);
             this.SymbolKeypad0.Name = "SymbolKeypad0";
-            this.SymbolKeypad0.Size = new System.Drawing.Size(50, 50);
+            this.SymbolKeypad0.Size = new System.Drawing.Size(106, 50);
             this.SymbolKeypad0.TabIndex = 7;
             this.SymbolKeypad0.Text = "0";
             this.SymbolKeypad0.UseVisualStyleBackColor = false;
@@ -173,7 +174,7 @@ namespace Calculator
             this.SymbolKeypad3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad3.Location = new System.Drawing.Point(124, 202);
+            this.SymbolKeypad3.Location = new System.Drawing.Point(124, 258);
             this.SymbolKeypad3.Name = "SymbolKeypad3";
             this.SymbolKeypad3.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad3.TabIndex = 8;
@@ -187,7 +188,7 @@ namespace Calculator
             this.SymbolKeypad2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad2.Location = new System.Drawing.Point(68, 202);
+            this.SymbolKeypad2.Location = new System.Drawing.Point(68, 258);
             this.SymbolKeypad2.Name = "SymbolKeypad2";
             this.SymbolKeypad2.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad2.TabIndex = 9;
@@ -201,7 +202,7 @@ namespace Calculator
             this.SymbolKeypad1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad1.Location = new System.Drawing.Point(12, 202);
+            this.SymbolKeypad1.Location = new System.Drawing.Point(12, 258);
             this.SymbolKeypad1.Name = "SymbolKeypad1";
             this.SymbolKeypad1.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad1.TabIndex = 10;
@@ -215,7 +216,7 @@ namespace Calculator
             this.SymbolKeypad6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolKeypad6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolKeypad6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolKeypad6.Location = new System.Drawing.Point(124, 146);
+            this.SymbolKeypad6.Location = new System.Drawing.Point(124, 202);
             this.SymbolKeypad6.Name = "SymbolKeypad6";
             this.SymbolKeypad6.Size = new System.Drawing.Size(50, 50);
             this.SymbolKeypad6.TabIndex = 11;
@@ -229,7 +230,7 @@ namespace Calculator
             this.SymbolButton_Divide.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Divide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Divide.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Divide.Location = new System.Drawing.Point(180, 90);
+            this.SymbolButton_Divide.Location = new System.Drawing.Point(180, 146);
             this.SymbolButton_Divide.Name = "SymbolButton_Divide";
             this.SymbolButton_Divide.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Divide.TabIndex = 12;
@@ -243,7 +244,7 @@ namespace Calculator
             this.SymbolButton_Times.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Times.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Times.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Times.Location = new System.Drawing.Point(180, 146);
+            this.SymbolButton_Times.Location = new System.Drawing.Point(180, 202);
             this.SymbolButton_Times.Name = "SymbolButton_Times";
             this.SymbolButton_Times.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Times.TabIndex = 13;
@@ -257,7 +258,7 @@ namespace Calculator
             this.SymbolButton_Minus.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Minus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Minus.Location = new System.Drawing.Point(180, 202);
+            this.SymbolButton_Minus.Location = new System.Drawing.Point(180, 258);
             this.SymbolButton_Minus.Name = "SymbolButton_Minus";
             this.SymbolButton_Minus.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Minus.TabIndex = 14;
@@ -271,7 +272,7 @@ namespace Calculator
             this.SymbolButton_Equal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Equal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Equal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Equal.Location = new System.Drawing.Point(292, 203);
+            this.SymbolButton_Equal.Location = new System.Drawing.Point(236, 258);
             this.SymbolButton_Equal.Name = "SymbolButton_Equal";
             this.SymbolButton_Equal.Size = new System.Drawing.Size(50, 106);
             this.SymbolButton_Equal.TabIndex = 15;
@@ -285,9 +286,9 @@ namespace Calculator
             this.Button_AllClear.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_AllClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_AllClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_AllClear.Location = new System.Drawing.Point(236, 90);
+            this.Button_AllClear.Location = new System.Drawing.Point(236, 147);
             this.Button_AllClear.Name = "Button_AllClear";
-            this.Button_AllClear.Size = new System.Drawing.Size(106, 50);
+            this.Button_AllClear.Size = new System.Drawing.Size(50, 50);
             this.Button_AllClear.TabIndex = 16;
             this.Button_AllClear.Text = "AC";
             this.Button_AllClear.UseVisualStyleBackColor = false;
@@ -299,7 +300,7 @@ namespace Calculator
             this.Button_Delete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Delete.Location = new System.Drawing.Point(292, 147);
+            this.Button_Delete.Location = new System.Drawing.Point(236, 203);
             this.Button_Delete.Name = "Button_Delete";
             this.Button_Delete.Size = new System.Drawing.Size(50, 50);
             this.Button_Delete.TabIndex = 17;
@@ -314,7 +315,7 @@ namespace Calculator
             this.CalcDisplay.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CalcDisplay.Location = new System.Drawing.Point(13, 13);
             this.CalcDisplay.Name = "CalcDisplay";
-            this.CalcDisplay.Size = new System.Drawing.Size(329, 58);
+            this.CalcDisplay.Size = new System.Drawing.Size(273, 58);
             this.CalcDisplay.TabIndex = 18;
             this.CalcDisplay.Text = "0";
             this.CalcDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -325,7 +326,7 @@ namespace Calculator
             this.SymbolButton_PlusMinus.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_PlusMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_PlusMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_PlusMinus.Location = new System.Drawing.Point(12, 257);
+            this.SymbolButton_PlusMinus.Location = new System.Drawing.Point(236, 91);
             this.SymbolButton_PlusMinus.Name = "SymbolButton_PlusMinus";
             this.SymbolButton_PlusMinus.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_PlusMinus.TabIndex = 19;
@@ -339,7 +340,7 @@ namespace Calculator
             this.SymbolButton_SquareRoot.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_SquareRoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_SquareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_SquareRoot.Location = new System.Drawing.Point(235, 258);
+            this.SymbolButton_SquareRoot.Location = new System.Drawing.Point(124, 90);
             this.SymbolButton_SquareRoot.Name = "SymbolButton_SquareRoot";
             this.SymbolButton_SquareRoot.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_SquareRoot.TabIndex = 20;
@@ -353,7 +354,7 @@ namespace Calculator
             this.SymbolButton_Percent.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Percent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Percent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Percent.Location = new System.Drawing.Point(236, 202);
+            this.SymbolButton_Percent.Location = new System.Drawing.Point(180, 90);
             this.SymbolButton_Percent.Name = "SymbolButton_Percent";
             this.SymbolButton_Percent.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Percent.TabIndex = 21;
@@ -367,7 +368,7 @@ namespace Calculator
             this.SymbolButton_Reciprocal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SymbolButton_Reciprocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SymbolButton_Reciprocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SymbolButton_Reciprocal.Location = new System.Drawing.Point(236, 146);
+            this.SymbolButton_Reciprocal.Location = new System.Drawing.Point(12, 90);
             this.SymbolButton_Reciprocal.Name = "SymbolButton_Reciprocal";
             this.SymbolButton_Reciprocal.Size = new System.Drawing.Size(50, 50);
             this.SymbolButton_Reciprocal.TabIndex = 22;
@@ -375,12 +376,26 @@ namespace Calculator
             this.SymbolButton_Reciprocal.UseVisualStyleBackColor = false;
             this.SymbolButton_Reciprocal.Click += new System.EventHandler(this.SymbolButton_Reciprocal_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightPink;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(68, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 50);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "x>2";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepPink;
-            this.ClientSize = new System.Drawing.Size(354, 329);
+            this.ClientSize = new System.Drawing.Size(302, 382);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.SymbolButton_Reciprocal);
             this.Controls.Add(this.SymbolButton_Percent);
             this.Controls.Add(this.SymbolButton_SquareRoot);
@@ -437,6 +452,7 @@ namespace Calculator
         private System.Windows.Forms.Button SymbolButton_SquareRoot;
         private System.Windows.Forms.Button SymbolButton_Percent;
         private System.Windows.Forms.Button SymbolButton_Reciprocal;
+        private System.Windows.Forms.Button button1;
     }
 }
 
