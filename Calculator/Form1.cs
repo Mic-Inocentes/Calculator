@@ -187,5 +187,12 @@ namespace Calculator
             number = number * -1;
             CalcDisplay.Text = number + "";
         }
+
+        private void SymbolButton_SquareRoot_Click(object sender, EventArgs e)
+        {
+            double number = Convert.ToDouble(CalcDisplay.Text);
+            number = Math.Pow(number, .5);
+            CalcDisplay.Text = number + "";
+        }
     }
 }

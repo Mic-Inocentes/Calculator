@@ -345,6 +345,7 @@ namespace Calculator
             this.SymbolButton_SquareRoot.TabIndex = 20;
             this.SymbolButton_SquareRoot.Text = "√";
             this.SymbolButton_SquareRoot.UseVisualStyleBackColor = false;
+            this.SymbolButton_SquareRoot.Click += new System.EventHandler(this.SymbolButton_SquareRoot_Click);
             // 
             // SymbolButton_Percent
             // 
