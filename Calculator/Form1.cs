@@ -27,82 +27,60 @@ namespace Calculator
 
         private void SymbolKeypad0_Click(object sender, EventArgs e)
         {
+            DisplayNumber("0");
+        }
+
+        private void DisplayNumber(String num)
+        {
             CalcDisplay.Text = "";
-            userInput += "0";
+            userInput += num;
             CalcDisplay.Text += userInput;
             PressSound.Play();
         }
 
         private void SymbolKeypad1_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "1";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("1");
         }
 
         private void SymbolKeypad2_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "2";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("2");
         }
 
         private void SymbolKeypad3_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "3";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("3");
         }
 
         private void SymbolKeypad4_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "4";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("4");
         }
 
         private void SymbolKeypad5_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "5";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("5");
         }
 
         private void SymbolKeypad6_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "6";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("6");
         }
 
         private void SymbolKeypad7_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "7";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("7");
         }
 
         private void SymbolKeypad8_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "8";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("8");
         }
 
         private void SymbolKeypad9_Click(object sender, EventArgs e)
         {
-            CalcDisplay.Text = "";
-            userInput += "9";
-            CalcDisplay.Text += userInput;
-            PressSound.Play();
+            DisplayNumber("9");
         }
 
         private void SymbolButton_Decimal_Click(object sender, EventArgs e)
