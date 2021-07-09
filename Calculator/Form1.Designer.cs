@@ -52,7 +52,7 @@ namespace Calculator
             this.SymbolButton_SquareRoot = new System.Windows.Forms.Button();
             this.SymbolButton_Percent = new System.Windows.Forms.Button();
             this.SymbolButton_Reciprocal = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SymbolButton_Square = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -379,18 +379,19 @@ namespace Calculator
             this.SymbolButton_Reciprocal.UseVisualStyleBackColor = false;
             this.SymbolButton_Reciprocal.Click += new System.EventHandler(this.SymbolButton_Reciprocal_Click);
             // 
-            // button1
+            // SymbolButton_Square
             // 
-            this.button1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(67, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 50);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "x²";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SymbolButton_Square.BackColor = System.Drawing.Color.LemonChiffon;
+            this.SymbolButton_Square.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.SymbolButton_Square.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SymbolButton_Square.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SymbolButton_Square.Location = new System.Drawing.Point(67, 127);
+            this.SymbolButton_Square.Name = "SymbolButton_Square";
+            this.SymbolButton_Square.Size = new System.Drawing.Size(50, 50);
+            this.SymbolButton_Square.TabIndex = 23;
+            this.SymbolButton_Square.Text = "x²";
+            this.SymbolButton_Square.UseVisualStyleBackColor = false;
+            this.SymbolButton_Square.Click += new System.EventHandler(this.SymbolButton_Square_Click);
             // 
             // label1
             // 
@@ -420,7 +421,7 @@ namespace Calculator
             this.ClientSize = new System.Drawing.Size(302, 415);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SymbolButton_Square);
             this.Controls.Add(this.SymbolButton_Reciprocal);
             this.Controls.Add(this.SymbolButton_Percent);
             this.Controls.Add(this.SymbolButton_SquareRoot);
@@ -478,7 +479,7 @@ namespace Calculator
         private System.Windows.Forms.Button SymbolButton_SquareRoot;
         private System.Windows.Forms.Button SymbolButton_Percent;
         private System.Windows.Forms.Button SymbolButton_Reciprocal;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SymbolButton_Square;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

@@ -149,54 +149,22 @@ namespace Calculator
             CalcDisplay.Text = "0";
         }
 
-        private void SymbolButton_Equal_Click(object sender, EventArgs e)
-        {
-            second = userInput;
-            double firstNum, secondNum;
-            firstNum = Convert.ToDouble(first);
-            secondNum = Convert.ToDouble(second);
-
-            if (function == '+')
-            {
-                result = firstNum + secondNum;
-                CalcDisplay.Text = result.ToString();
-            }
-
-            else if (function == '-')
-            {
-                result = firstNum - secondNum;
-                CalcDisplay.Text = result.ToString();
-            }
-
-            else if (function == '*')
-            {
-                result = firstNum * secondNum;
-                CalcDisplay.Text = result.ToString();
-            }
-
-            else if (function == '/')
-            {
-                if (secondNum == 'O')
-                {
-                    CalcDisplay.Text = "Error";
-                }
-                else
-                {
-                    result = firstNum / secondNum;
-                    CalcDisplay.Text = result.ToString();
-                }
-            }
-        }
-
         private void Button_Delete_Click(object sender, EventArgs e)
         {
             CalcDisplay.Text = CalcDisplay.Text.Substring(0, CalcDisplay.Text.Length - 1);
         }
 
-        private void SymbolButton_PlusMinus_Click(object sender, EventArgs e)
+        private void SymbolButton_Reciprocal_Click(object sender, EventArgs e)
         {
             double number = Convert.ToDouble(CalcDisplay.Text);
-            number = number * -1;
+            number = 1 / number;
+            CalcDisplay.Text = number + "";
+        }
+
+        private void SymbolButton_Square_Click(object sender, EventArgs e)
+        {
+            double number = Convert.ToDouble(CalcDisplay.Text);
+            number = Math.Pow(number, 2);
             CalcDisplay.Text = number + "";
         }
 
@@ -214,10 +182,10 @@ namespace Calculator
             }
         }
 
-        private void SymbolButton_Reciprocal_Click(object sender, EventArgs e)
+        private void SymbolButton_PlusMinus_Click(object sender, EventArgs e)
         {
             double number = Convert.ToDouble(CalcDisplay.Text);
-            number = 1 / number;
+            number = number * -1;
             CalcDisplay.Text = number + "";
         }
 
@@ -255,6 +223,45 @@ namespace Calculator
                 else
                 {
                     result = (firstNum / firstNum) * secondNum / 100;
+                    CalcDisplay.Text = result.ToString();
+                }
+            }
+        }
+
+        private void SymbolButton_Equal_Click(object sender, EventArgs e)
+        {
+            second = userInput;
+            double firstNum, secondNum;
+            firstNum = Convert.ToDouble(first);
+            secondNum = Convert.ToDouble(second);
+
+            if (function == '+')
+            {
+                result = firstNum + secondNum;
+                CalcDisplay.Text = result.ToString();
+            }
+
+            else if (function == '-')
+            {
+                result = firstNum - secondNum;
+                CalcDisplay.Text = result.ToString();
+            }
+
+            else if (function == '*')
+            {
+                result = firstNum * secondNum;
+                CalcDisplay.Text = result.ToString();
+            }
+
+            else if (function == '/')
+            {
+                if (secondNum == 'O')
+                {
+                    CalcDisplay.Text = "Error";
+                }
+                else
+                {
+                    result = firstNum / secondNum;
                     CalcDisplay.Text = result.ToString();
                 }
             }
