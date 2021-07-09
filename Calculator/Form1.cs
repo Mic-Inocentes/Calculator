@@ -25,17 +25,17 @@ namespace Calculator
             PressSound = new System.Media.SoundPlayer(Properties.Resources.sound);
         }
 
-        private void SymbolKeypad0_Click(object sender, EventArgs e)
-        {
-            DisplayNumber("0");
-        }
-
         private void DisplayNumber(String num)
         {
             CalcDisplay.Text = "";
             userInput += num;
             CalcDisplay.Text += userInput;
             PressSound.Play();
+        }
+
+        private void SymbolKeypad0_Click(object sender, EventArgs e)
+        {
+            DisplayNumber("0");
         }
 
         private void SymbolKeypad1_Click(object sender, EventArgs e)
